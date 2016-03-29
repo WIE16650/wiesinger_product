@@ -8,13 +8,13 @@
 public class Product
 {
     private String name;
-    private boolean onStock;
+    private float price;
 
     // Konstruktoren
     public Product()
     {
         setName  ("Coca Cola");
-        setOnStock (true);
+        setOnStock (10);
     } 
 
     // get Methode
@@ -23,9 +23,9 @@ public class Product
         return name;
     }
     
-    public boolean getOnStock()
+    public float getPrice()
     {
-    	return onStock;
+    	return price;
     }
 
     // set Methode
@@ -34,15 +34,15 @@ public class Product
         this.name = name;
     }
     
-    public void setOnStock(boolean onStock)
+    public void setPreis(float preis)
     {
-    	this.onStock = onStock;
+    	this.preis = preis;
     }
 
     // print Methode
     public void print()
     {
         System.out.println("Name: " + name);
-        System.out.println("Auf Lager.? " + onStock};
+        System.out.println("Auf Lager.? " + preis};
 
 }
